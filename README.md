@@ -105,4 +105,9 @@ The repository is organized as follows:
 
 ├── parkinsons_k_fold_cv.ipynb     # Notebook for K-Fold Cross-Validation (k=10) method. 
 
-├── parkinsons_leave_one_out.ipynb # Notebook for the Leave-One-Out method.
+├── parkinsons_leave_one_out.ipynb # Notebook for the Leave-One-Out method. 
+
+
+├── data/
+│   └── parkinsons.data            # The dataset file.
+└── README.md                      # This file.
