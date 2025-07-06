@@ -24,7 +24,7 @@ The features in the dataset include a range of voice metrics such as:
 
 ## Methods
 
-A thorough data analysis was conducted to identify and quantify the class imbalance and check for missing values[cite: 47]. The dataset was segmented using three distinct validation techniques to ensure robust evaluation:
+A thorough data analysis was conducted to identify and quantify the class imbalance and check for missing values. The dataset was segmented using three distinct validation techniques to ensure robust evaluation:
 
 1.  **Stratified Hold-Out**: 80% for training and 20% for testing.
 2.  **10-Fold Cross-Validation** 
@@ -35,11 +35,11 @@ A suite of algorithms was trained and evaluated, including:
 * A deep MLP with three hidden layers.
 * K-Nearest Neighbors (KNN) with K values of 3, 5, and 27.
 
-For statistical significance, 30 independent runs were performed for each experiment, systematically calculating the mean, minimum, and maximum for key performance metrics[cite: 51].
+For statistical significance, 30 independent runs were performed for each experiment, systematically calculating the mean, minimum, and maximum for key performance metrics.
 
 ## Results
 
-The **KNN model (k=3) using stratified hold-out validation** emerged as the top performer[cite: 52]. It achieved the following average results:
+The **KNN model (k=3) using stratified hold-out validation** emerged as the top performer. It achieved the following average results:
 
 * **Accuracy**: 85.1% 
 * **Precision**: 89.0% 
