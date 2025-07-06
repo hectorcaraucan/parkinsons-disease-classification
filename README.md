@@ -1,4 +1,4 @@
-# Parkinson's disease classification
+# Parkinson's Disease Classification
 
 This project implements and evaluates various machine learning models to classify Parkinson's disease based on a public dataset. The primary challenge addressed is the significant class imbalance within the data. A comprehensive machine learning pipeline was developed, including data preprocessing, model training, and robust evaluation using multiple validation techniques.
 
@@ -24,22 +24,22 @@ The features in the dataset include a range of voice metrics such as:
 
 ## Methods
 
-A thorough data analysis was conducted to identify and quantify the class imbalance and check for missing values[cite: 47]. [cite_start]The dataset was segmented using three distinct validation techniques to ensure robust evaluation:
+A thorough data analysis was conducted to identify and quantify the class imbalance and check for missing values[cite: 47]. The dataset was segmented using three distinct validation techniques to ensure robust evaluation:
 
 1.  **Stratified Hold-Out**: 80% for training and 20% for testing.
 2.  **10-Fold Cross-Validation** 
-3.  **Leave-One-Out Cross-Validation**
+3.  **Leave-One-Out Cross-Validation** 
 
 A suite of algorithms was trained and evaluated, including:
 * Multilayer Perceptron (MLP) with 10 and 100 neurons.
 * A deep MLP with three hidden layers.
 * K-Nearest Neighbors (KNN) with K values of 3, 5, and 27.
 
-For statistical significance, 30 independent runs were performed for each experiment, systematically calculating the mean, minimum, and maximum for key performance metrics[
+For statistical significance, 30 independent runs were performed for each experiment, systematically calculating the mean, minimum, and maximum for key performance metrics[cite: 51].
 
 ## Results
 
-[cite_start]The **KNN model (k=3) using stratified hold-out validation** emerged as the top performer[cite: 52]. It achieved the following average results:
+The **KNN model (k=3) using stratified hold-out validation** emerged as the top performer[cite: 52]. It achieved the following average results:
 
 * **Accuracy**: 85.1% 
 * **Precision**: 89.0% 
@@ -49,9 +49,9 @@ These results demonstrated a strong ability to correctly identify patients with 
 
 | Validation Method | Algorithm | Accuracy | Precision | Recall |
 | :--- | :--- | :--- | :--- | :--- |
-| **Stratified Hold-Out** | **KNN (k=3)** | **85.1%** | **89.0%**  | **92.0%** |
+| **Stratified Hold-Out** | **KNN (k=3)** | **85.1%**  | **89.0%**  | **92.0%**  |
 | Stratified Hold-Out | KNN (k=5) | 85.3%  | 87.7%  | 94.1%  |
-| K-Fold Cross-Validation | KNN (k=3) | 85.0%  | 88.4% | 92.4%  |
+| K-Fold Cross-Validation | KNN (k=3) | 85.0%  | 88.4%  | 92.4%  |
 | Leave-One-Out | KNN (k=3) | 85.1%  | 88.8%  | 91.8%  |
 
 ## How to Run the Project
